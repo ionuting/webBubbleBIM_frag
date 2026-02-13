@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net">
+    <diagram name="BIM Setup & WASM Configuration" id="setup-wasm-guide">
+        <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- TITLE -->
+                <mxCell id="title" value="BIM Viewer Setup Guide - Dependencies & WASM Configuration" style="text;fontSize=14;fontStyle=1;align=center;fillColor=#e3f2fd;strokeColor=#1976d2;rounded=1;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="10" width="1160" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- LEFT FLOW SECTION -->
+                <mxCell id="step1" value="START: New BIM Viewer Project" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="20" y="70" width="280" height="50" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="step2" value="Install Node.js & npm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
+                    <mxGeometry x="20" y="140" width="280" height="50" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="step3" value="Run: npm install" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11" vertex="1" parent="1">
+                    <mxGeometry x="20" y="210" width="280" height="50" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="step4" value="Install Required Packages:&#xa;- @thatopen/components ^0.5.x&#xa;- three r128&#xa;- web-ifc ^0.0.74" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;align=left;valign=middle" vertex="1" parent="1">
+                    <mxGeometry x="20" y="280" width="280" height="100" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="step5" value="Configure WASM in IfcLoader:&#xa;CDN: web-ifc@0.0.74&#xa;path: https://unpkg.com/web-ifc@0.0.74/&#xa;absolute: true" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b7e1cd;strokeColor=#388e3c;fontSize=9;align=left;valign=middle" vertex="1" parent="1">
+                    <mxGeometry x="20" y="400" width="280" height="100" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="step6" value="Viewer.tsx Imports:&#xa;import * as THREE from 'three'&#xa;import * as OBC from '@thatopen/components'&#xa;Setup IfcLoader" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8d5f8;strokeColor=#9673a6;fontSize=9;align=left;valign=middle" vertex="1" parent="1">
+                    <mxGeometry x="20" y="520" width="280" height="100" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="step7" value="Run: npm run dev&#xa;OBC.IfcLoader loads WASM&#xa;from CDN @0.0.74" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=1;align=left;valign=middle" vertex="1" parent="1">
+                    <mxGeometry x="20" y="640" width="280" height="90" as="geometry"/>
+                </mxCell>
+                
+                <!-- Flow arrows -->
+                <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="step1" target="step2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="step2" target="step3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="step3" target="step4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="step4" target="step5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="step5" target="step6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" source="step6" target="step7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- RIGHT CODE SECTION -->
+                <mxCell id="pkgjson-header" value="package.json (Dependencies)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#444444;fontSize=11;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+                    <mxGeometry x="340" y="70" width="410" height="30" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="pkgjson-code" value='{&#xa;  &quot;dependencies&quot;: {&#xa;    &quot;@thatopen/components&quot;: &quot;^0.5.x&quot;,&#xa;    &quot;three&quot;: &quot;r128&quot;,&#xa;    &quot;web-ifc&quot;: &quot;^0.0.74&quot;,&#xa;    &quot;wouter&quot;: &quot;^2.x&quot;,&#xa;    &quot;@radix-ui/...&quot;: &quot;^x.x&quot;&#xa;  }&#xa;}' style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffacd;strokeColor=#b3b300;fontSize=8;fontFamily=Courier New;align=left;valign=top" vertex="1" parent="1">
+                    <mxGeometry x="340" y="100" width="410" height="170" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="viewer-header" value="Viewer.tsx - IfcLoader Setup" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e0e0;strokeColor=#444444;fontSize=11;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+                    <mxGeometry x="340" y="290" width="410" height="30" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="viewer-code" value="import * as THREE from 'three';&#xa;import * as OBC from '@thatopen/components';&#xa;&#xa;const ifcLoader = components.get(OBC.IfcLoader);&#xa;&#xa;ifcLoader.settings.wasm = {&#xa;  path: 'https://unpkg.com/web-ifc@0.0.74/',&#xa;  absolute: true&#xa;};&#xa;&#xa;ifcLoader.settings.webIfc.COORDINATE_TO_ORIGIN = true;&#xa;ifcLoader.settings.webIfc.OPTIMIZE_PROFILES = true;&#xa;&#xa;await ifcLoader.setup();" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#558b2f;fontSize=7;fontFamily=Courier New;align=left;valign=top" vertex="1" parent="1">
+                    <mxGeometry x="340" y="320" width="410" height="250" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="cdn-highlight" value="KEY: web-ifc@0.0.74 from unpkg CDN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#cc0000;fontSize=10;fontStyle=1;fontColor=#000000" vertex="1" parent="1">
+                    <mxGeometry x="340" y="590" width="410" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Connection arrows from flow to code -->
+                <mxCell id="conn1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#888888;strokeWidth=1;dashed=1" edge="1" parent="1" source="step4" target="pkgjson-code">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="conn2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#888888;strokeWidth=1;dashed=1" edge="1" parent="1" source="step6" target="viewer-code">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- BOTTOM NOTES -->
+                <mxCell id="note1" value="⚠️ IMPORTANT: Always use CDN path for web-ifc WASM in 2025/2026" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3cd;strokeColor=#ff6b6b;fontSize=9;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="20" y="760" width="730" height="30" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="note2" value="Local WASM paths (/public/) cause 'rawConstructor' errors. Use CDN instead!" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8d7da;strokeColor=#721c24;fontSize=8" vertex="1" parent="1">
+                    <mxGeometry x="20" y="800" width="730" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
