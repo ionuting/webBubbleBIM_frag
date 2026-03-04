@@ -4,6 +4,7 @@ import * as OBF from "@thatopen/components-front";
 import * as FRAGS from "@thatopen/fragments";
 import * as THREE from "three";
 import { appIcons, tooltips } from "../../globals";
+import { toggleProjectSettings } from "../sections/project-settings";
 
 export interface ViewerToolbarState {
   components: OBC.Components;
@@ -181,6 +182,15 @@ export const viewerToolbarTemplate: BUI.StatefullComponent<
       </bim-toolbar-section> 
       <bim-toolbar-section label="Nodal" icon=${appIcons.GRAPH}>
         <bim-button icon=${appIcons.GRAPH} label="Nodal Graph" @click=${() => _toggleNodalGraph?.()}></bim-button>
+      </bim-toolbar-section>
+      <bim-toolbar-section label="Proiect" icon=${appIcons.PROJECT_SETTINGS}>
+        <bim-button
+          icon=${appIcons.BOOLEAN}
+          label="Project Settings"
+          tooltip-title="Project Settings"
+          tooltip-text="Configurare globală a proiectului: relații boolean, priorități IFC și alte setări."
+          @click=${() => toggleProjectSettings()}
+        ></bim-button>
       </bim-toolbar-section>
     </bim-toolbar>
   `;

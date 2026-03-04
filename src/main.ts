@@ -205,6 +205,10 @@ viewport.append(viewportGrid);
 const toggleNodalGraph = TEMPLATES.mountNodalGraphPanel(components);
 TEMPLATES.setNodalGraphToggle(toggleNodalGraph);
 
+// Mount Project Settings floating panel (global — not specific to node editor)
+TEMPLATES.mountProjectSettingsPanel();
+// (toggle is wired directly via toggleProjectSettings singleton — no further setup needed)
+
 // Content Grid Setup
 const viewportCardTemplate = () => BUI.html`
   <div class="dashboard-card" style="padding: 0px;">

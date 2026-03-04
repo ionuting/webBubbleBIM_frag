@@ -4,6 +4,7 @@ import * as FRAGS from "@thatopen/fragments";
 import * as THREE from "three";
 import * as WEBIFC from "web-ifc";
 import { NodeRegistry } from "./node-registry";
+import { BIMLibrary } from "./bim-library";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -93,7 +94,11 @@ export interface ParamDef {
   label: string;
   placeholder: string;
   defaultValue?: string;
-  type?: "text" | "textarea";
+  type?: "text" | "textarea" | "select";
+  /** Categoria din BIMLibrary din care se populează opțiunile dropdown-ului. */
+  selectSource?: string;
+  /** Opțiuni statice pentru dropdown (alternativă la selectSource). */
+  selectOptions?: Array<{ value: string; label: string }>;
 }
 
 export interface NodeTypeDef {
@@ -1405,8 +1410,37 @@ const createNodeEditor = (components: OBC.Components, onHide?: () => void): HTML
       const lbl = document.createElement("label");
       lbl.className = "ne-param-label";
       lbl.textContent = paramDef.label;
-      let ctrl: HTMLInputElement | HTMLTextAreaElement;
-      if (paramDef.type === "textarea") {
+      let ctrl: HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
+      if (paramDef.type === "select") {
+        const sel = document.createElement("select");
+        sel.className = "ne-param-input ne-param-select";
+        const emptyOpt = document.createElement("option");
+        emptyOpt.value = "";
+        emptyOpt.textContent = "— selectează —";
+        sel.appendChild(emptyOpt);
+        const opts: Array<{ value: string; label: string }> = paramDef.selectOptions
+          ? [...paramDef.selectOptions]
+          : (paramDef.selectSource ? BIMLibrary.getByCategory(paramDef.selectSource).map((i) => ({ value: i.value, label: i.name })) : []);
+        for (const o of opts) {
+          const opt = document.createElement("option");
+          opt.value = o.value;
+          opt.textContent = o.label;
+          sel.appendChild(opt);
+        }
+        const stored = node.params[paramDef.id] ?? paramDef.defaultValue ?? "";
+        sel.value = stored;
+        if (sel.value !== stored) {
+          // Value not in list — add a temporary option so it displays correctly
+          const tmpOpt = document.createElement("option");
+          tmpOpt.value = stored;
+          tmpOpt.textContent = stored || "— selectează —";
+          sel.appendChild(tmpOpt);
+          sel.value = stored;
+        }
+        sel.addEventListener("change", () => { node.params[paramDef.id] = sel.value; saveGraph(graph); });
+        sel.addEventListener("mousedown", (e) => e.stopPropagation());
+        ctrl = sel;
+      } else if (paramDef.type === "textarea") {
         const ta = document.createElement("textarea");
         ta.className = "ne-param-input ne-param-textarea";
         ta.placeholder = paramDef.placeholder;
@@ -1425,7 +1459,7 @@ const createNodeEditor = (components: OBC.Components, onHide?: () => void): HTML
         inp.addEventListener("mousedown", (e) => e.stopPropagation());
         ctrl = inp;
       }
-      row.append(lbl, ctrl);
+      row.append(lbl, ctrl!);
       paramsEl.appendChild(row);
     }
 
@@ -1982,4 +2016,5 @@ const NE_CSS = `
 }
 .ne-param-input:focus { border-color: var(--bim-ui_accent-base, #6528d7); }
 .ne-param-textarea { resize: vertical; min-height: 3.5rem; line-height: 1.4; font-family: monospace; }
+.ne-param-select { cursor: pointer; appearance: auto; }
 `;

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <graph id="G" edgedefault="undirected">
+    <node id="1">
+      <data key="type">ax</data>
+      <data key="name">1</data>
+      <data key="x">100</data>
+      <data key="y">100</data>
+      <data key="z">0</data>
+      <data key="has_column">True</data>
+      <data key="column_type">C25x25</data>
+    </node>
+    <node id="2">
+      <data key="type">wall</data>
+      <data key="name">W25</data>
+      <data key="x">200</data>
+      <data key="y">100</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="3">
+      <data key="type">ax</data>
+      <data key="name">2</data>
+      <data key="x">298.81328174197154</data>
+      <data key="y">101.18671825802836</data>
+      <data key="z">0</data>
+      <data key="has_column">True</data>
+      <data key="column_type">C25x25</data>
+    </node>
+    <node id="4">
+      <data key="type">window</data>
+      <data key="name">wd120x120</data>
+      <data key="x">191.2564356536762</data>
+      <data key="y">195.92148779913782</data>
+      <data key="z">0</data>
+      <data key="offset">1</data>
+      <data key="sill_height">0.9</data>
+    </node>
+    <node id="5">
+      <data key="type">door</data>
+      <data key="name">d90x210</data>
+      <data key="x">387.0863106577412</data>
+      <data key="y">205.0025133187471</data>
+      <data key="z">0</data>
+      <data key="offset">1</data>
+      <data key="sill_height">0.9</data>
+    </node>
+    <node id="6">
+      <data key="type">room</data>
+      <data key="name">room</data>
+      <data key="x">194.95020078279006</data>
+      <data key="y">0.9861995339092736</data>
+      <data key="z">0</data>
+      <data key="name">Room</data>
+      <data key="height">0.9</data>
+    </node>
+    <node id="7">
+      <data key="type">ax</data>
+      <data key="name">3</data>
+      <data key="x">462.42226010233867</data>
+      <data key="y">99.88523027469678</data>
+      <data key="z">0</data>
+    </node>
+    <node id="8">
+      <data key="type">ax</data>
+      <data key="name">4</data>
+      <data key="x">693.0549165355928</data>
+      <data key="y">100.33743150610611</data>
+      <data key="z">0</data>
+    </node>
+    <node id="9">
+      <data key="type">ax</data>
+      <data key="name">5</data>
+      <data key="x">99.35221258123988</data>
+      <data key="y">-85.52915318360074</data>
+      <data key="z">0</data>
+    </node>
+    <node id="10">
+      <data key="type">ax</data>
+      <data key="name">6</data>
+      <data key="x">295.7436775045246</data>
+      <data key="y">-86.71587144162912</data>
+      <data key="z">0</data>
+    </node>
+    <node id="11">
+      <data key="type">ax</data>
+      <data key="name">7</data>
+      <data key="x">462.5276747238198</data>
+      <data key="y">-95.47980551233319</data>
+      <data key="z">0</data>
+    </node>
+    <node id="12">
+      <data key="type">ax</data>
+      <data key="name">8</data>
+      <data key="x">693.4290644718855</data>
+      <data key="y">-96.80607170908424</data>
+      <data key="z">0</data>
+    </node>
+    <node id="13">
+      <data key="type">ax</data>
+      <data key="name">9</data>
+      <data key="x">99.20357386186674</data>
+      <data key="y">-280.66584491312125</data>
+      <data key="z">0</data>
+    </node>
+    <node id="14">
+      <data key="type">ax</data>
+      <data key="name">10</data>
+      <data key="x">284.70781962562637</data>
+      <data key="y">-282.098364743309</data>
+      <data key="z">0</data>
+    </node>
+    <node id="15">
+      <data key="type">ax</data>
+      <data key="name">11</data>
+      <data key="x">472.8709477322202</data>
+      <data key="y">-282.9168215344567</data>
+      <data key="z">0</data>
+    </node>
+    <node id="16">
+      <data key="type">ax</data>
+      <data key="name">12</data>
+      <data key="x">687.2246931555418</data>
+      <data key="y">-278.5382099692238</data>
+      <data key="z">0</data>
+    </node>
+    <node id="17">
+      <data key="type">ax</data>
+      <data key="name">13</data>
+      <data key="x">84.6152300184751</data>
+      <data key="y">-441.7081989708451</data>
+      <data key="z">0</data>
+    </node>
+    <node id="18">
+      <data key="type">ax</data>
+      <data key="name">14</data>
+      <data key="x">284.69747800707506</data>
+      <data key="y">-446.1515367878149</data>
+      <data key="z">0</data>
+    </node>
+    <node id="19">
+      <data key="type">ax</data>
+      <data key="name">15</data>
+      <data key="x">477.7675167573692</data>
+      <data key="y">-456.46110196380147</data>
+      <data key="z">0</data>
+    </node>
+    <node id="20">
+      <data key="type">ax</data>
+      <data key="name">16</data>
+      <data key="x">685.9480438706956</data>
+      <data key="y">-461.6528949614056</data>
+      <data key="z">0</data>
+    </node>
+    <node id="21">
+      <data key="type">wall</data>
+      <data key="name">W21</data>
+      <data key="x">381.21113005116933</data>
+      <data key="y">100.88472821475024</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="22">
+      <data key="type">wall</data>
+      <data key="name">W22</data>
+      <data key="x">570.0249196417813</data>
+      <data key="y">103.07812653547244</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="23">
+      <data key="type">wall</data>
+      <data key="name">W23</data>
+      <data key="x">690.2751948586682</data>
+      <data key="y">-0.014397488531578023</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="24">
+      <data key="type">wall</data>
+      <data key="name">W24</data>
+      <data key="x">687.9534422976568</data>
+      <data key="y">-189.4522182261966</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="25">
+      <data key="type">wall</data>
+      <data key="name">W25</data>
+      <data key="x">687.1797276421329</data>
+      <data key="y">-371.28227072334306</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="26">
+      <data key="type">wall</data>
+      <data key="name">W26</data>
+      <data key="x">568.2105203467061</data>
+      <data key="y">-466.7706671397881</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="27">
+      <data key="type">wall</data>
+      <data key="name">W27</data>
+      <data key="x">465.9192338409774</data>
+      <data key="y">-182.07800397522462</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="28">
+      <data key="type">wall</data>
+      <data key="name">W28</data>
+      <data key="x">474.1325139867663</data>
+      <data key="y">-369.6889617491291</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="29">
+      <data key="type">wall</data>
+      <data key="name">W29</data>
+      <data key="x">381.23249738222216</data>
+      <data key="y">-451.3063193758082</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="30">
+      <data key="type">wall</data>
+      <data key="name">W30</data>
+      <data key="x">191.7766635609454</data>
+      <data key="y">-446.30330439538676</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="31">
+      <data key="type">wall</data>
+      <data key="name">W31</data>
+      <data key="x">88.94260629509995</data>
+      <data key="y">-343.9796072005715</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="32">
+      <data key="type">wall</data>
+      <data key="name">W32</data>
+      <data key="x">98.68453409253911</data>
+      <data key="y">-200.30491378977254</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="33">
+      <data key="type">wall</data>
+      <data key="name">W33</data>
+      <data key="x">94.92923325850637</data>
+      <data key="y">10.795578182284785</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="34">
+      <data key="type">wall</data>
+      <data key="name">W34</data>
+      <data key="x">299.65191613930494</data>
+      <data key="y">10.795578182284785</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="35">
+      <data key="type">wall</data>
+      <data key="name">W35</data>
+      <data key="x">461.881608284065</data>
+      <data key="y">9.323021929352109</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="36">
+      <data key="type">wall</data>
+      <data key="name">W36</data>
+      <data key="x">577.3850104688385</data>
+      <data key="y">-89.0226290625384</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="37">
+      <data key="type">wall</data>
+      <data key="name">W37</data>
+      <data key="x">194.5811493978113</data>
+      <data key="y">-78.40884363543043</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="38">
+      <data key="type">wall</data>
+      <data key="name">W38</data>
+      <data key="x">292.00582595211813</data>
+      <data key="y">-180.2536041893697</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="39">
+      <data key="type">wall</data>
+      <data key="name">W39</data>
+      <data key="x">377.60266542089494</data>
+      <data key="y">-282.50759313888284</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="40">
+      <data key="type">wall</data>
+      <data key="name">W40</data>
+      <data key="x">284.7026488163507</data>
+      <data key="y">-364.12495076556195</data>
+      <data key="z">0</data>
+      <data key="material">Beton C30/37</data>
+      <data key="dimensiuni">30x60cm</data>
+      <data key="has_beam">True</data>
+      <data key="beam_type">C25x25</data>
+    </node>
+    <node id="41">
+      <data key="type">window</data>
+      <data key="name">W41</data>
+      <data key="x">566.18895614352</data>
+      <data key="y">207.04664271076206</data>
+      <data key="z">0</data>
+    </node>
+    <node id="42">
+      <data key="type">window</data>
+      <data key="name">W42</data>
+      <data key="x">571.9326725123775</data>
+      <data key="y">-558.3035634394856</data>
+      <data key="z">0</data>
+    </node>
+    <node id="43">
+      <data key="type">window</data>
+      <data key="name">W43</data>
+      <data key="x">148.33359030914468</data>
+      <data key="y">-545.3802016095566</data>
+      <data key="z">0</data>
+    </node>
+    <node id="44">
+      <data key="type">window</data>
+      <data key="name">W44</data>
+      <data key="x">375.21038687901176</data>
+      <data key="y">-553.9957761628426</data>
+      <data key="z">0</data>
+    </node>
+    <node id="45">
+      <data key="type">door</data>
+      <data key="name">D45</data>
+      <data key="x">340.42767473619966</data>
+      <data key="y">10.51423199868087</data>
+      <data key="z">0</data>
+    </node>
+    <node id="46">
+      <data key="type">door</data>
+      <data key="name">D46</data>
+      <data key="x">398.5768693795906</data>
+      <data key="y">8.140795482624096</data>
+      <data key="z">0</data>
+    </node>
+    <node id="47">
+      <data key="type">door</data>
+      <data key="name">D47</data>
+      <data key="x">340.42767473619966</data>
+      <data key="y">-186.48099883403137</data>
+      <data key="z">0</data>
+    </node>
+    <node id="48">
+      <data key="type">door</data>
+      <data key="name">D48</data>
+      <data key="x">416.37764325001643</data>
+      <data key="y">-182.9208440599462</data>
+      <data key="z">0</data>
+    </node>
+    <node id="49">
+      <data key="type">door</data>
+      <data key="name">D49</data>
+      <data key="x">381.9628137671932</data>
+      <data key="y">-220.8958283168546</data>
+      <data key="z">0</data>
+    </node>
+    <node id="50">
+      <data key="type">room</data>
+      <data key="name">R50</data>
+      <data key="x">169.54024558011196</data>
+      <data key="y">-264.8044038639049</data>
+      <data key="z">0</data>
+    </node>
+    <node id="51">
+      <data key="type">room</data>
+      <data key="name">R51</data>
+      <data key="x">574.2111715677919</data>
+      <data key="y">8.140795482624096</data>
+      <data key="z">0</data>
+    </node>
+    <node id="52">
+      <data key="type">room</data>
+      <data key="name">R52</data>
+      <data key="x">380.77609550916486</data>
+      <data key="y">-98.66384773993073</data>
+      <data key="z">0</data>
+    </node>
+    <node id="53">
+      <data key="type">room</data>
+      <data key="name">R53</data>
+      <data key="x">557.5971159553945</data>
+      <data key="y">-258.870812573763</data>
+      <data key="z">0</data>
+    </node>
+    <node id="54">
+      <data key="type">shell</data>
+      <data key="name">S54</data>
+      <data key="x">-22.708112220486722</data>
+      <data key="y">287.019586119295</data>
+      <data key="z">0</data>
+    </node>
+    <node id="55">
+      <data key="type">room</data>
+      <data key="name">R55</data>
+      <data key="x">378.40265899310805</data>
+      <data key="y">-373.9824836025165</data>
+      <data key="z">0</data>
+    </node>
+    <edge id="1" source="1" target="2"/>
+    <edge id="2" source="2" target="3"/>
+    <edge id="23" source="3" target="21"/>
+    <edge id="25" source="21" target="7"/>
+    <edge id="26" source="7" target="22"/>
+    <edge id="28" source="22" target="8"/>
+    <edge id="29" source="8" target="23"/>
+    <edge id="31" source="23" target="12"/>
+    <edge id="32" source="12" target="24"/>
+    <edge id="34" source="24" target="16"/>
+    <edge id="35" source="16" target="25"/>
+    <edge id="37" source="25" target="20"/>
+    <edge id="38" source="20" target="26"/>
+    <edge id="40" source="26" target="19"/>
+    <edge id="41" source="11" target="27"/>
+    <edge id="43" source="27" target="15"/>
+    <edge id="44" source="15" target="28"/>
+    <edge id="46" source="28" target="19"/>
+    <edge id="47" source="19" target="29"/>
+    <edge id="49" source="29" target="18"/>
+    <edge id="50" source="18" target="30"/>
+    <edge id="52" source="30" target="17"/>
+    <edge id="53" source="13" target="31"/>
+    <edge id="55" source="31" target="17"/>
+    <edge id="56" source="9" target="32"/>
+    <edge id="58" source="32" target="13"/>
+    <edge id="59" source="1" target="33"/>
+    <edge id="61" source="33" target="9"/>
+    <edge id="62" source="3" target="34"/>
+    <edge id="64" source="34" target="10"/>
+    <edge id="65" source="7" target="35"/>
+    <edge id="67" source="35" target="11"/>
+    <edge id="68" source="11" target="36"/>
+    <edge id="70" source="36" target="12"/>
+    <edge id="71" source="9" target="37"/>
+    <edge id="73" source="37" target="10"/>
+    <edge id="74" source="10" target="38"/>
+    <edge id="76" source="38" target="14"/>
+    <edge id="77" source="14" target="39"/>
+    <edge id="79" source="39" target="15"/>
+    <edge id="80" source="14" target="40"/>
+    <edge id="82" source="40" target="18"/>
+    <edge id="84" source="21" target="5"/>
+    <edge id="85" source="6" target="1"/>
+    <edge id="86" source="6" target="3"/>
+    <edge id="87" source="6" target="10"/>
+    <edge id="88" source="6" target="9"/>
+    <edge id="90" source="43" target="30"/>
+    <edge id="91" source="44" target="29"/>
+    <edge id="92" source="42" target="26"/>
+    <edge id="93" source="50" target="9"/>
+    <edge id="94" source="50" target="10"/>
+    <edge id="95" source="50" target="18"/>
+    <edge id="96" source="50" target="17"/>
+    <edge id="97" source="52" target="3"/>
+    <edge id="98" source="52" target="7"/>
+    <edge id="99" source="52" target="15"/>
+    <edge id="100" source="52" target="14"/>
+    <edge id="101" source="51" target="7"/>
+    <edge id="102" source="51" target="8"/>
+    <edge id="103" source="51" target="12"/>
+    <edge id="104" source="51" target="11"/>
+    <edge id="105" source="53" target="11"/>
+    <edge id="106" source="53" target="12"/>
+    <edge id="107" source="53" target="20"/>
+    <edge id="108" source="53" target="19"/>
+    <edge id="109" source="55" target="14"/>
+    <edge id="110" source="55" target="15"/>
+    <edge id="111" source="55" target="19"/>
+    <edge id="112" source="55" target="18"/>
+    <edge id="113" source="54" target="1"/>
+    <edge id="114" source="54" target="8"/>
+    <edge id="115" source="54" target="20"/>
+    <edge id="116" source="54" target="17"/>
+    <edge id="117" source="49" target="39"/>
+    <edge id="118" source="48" target="27"/>
+    <edge id="119" source="46" target="35"/>
+    <edge id="120" source="45" target="34"/>
+    <edge id="121" source="47" target="38"/>
+    <edge id="122" source="4" target="2"/>
+    <edge id="123" source="41" target="22"/>
+  </graph>
+</graphml>

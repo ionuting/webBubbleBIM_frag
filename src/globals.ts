@@ -12,6 +12,8 @@ export const appIcons = {
   LEFT: "tabler:chevron-compact-left",
   RIGHT: "tabler:chevron-compact-right",
   SETTINGS: "solar:settings-bold",
+  PROJECT_SETTINGS: "solar:settings-bold",
+  BOOLEAN: "mdi:set-center",
   COLORIZE: "famicons:color-fill",
   EXPAND: "eva:expand-fill",
   EXPORT: "ph:export-fill",

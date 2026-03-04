@@ -69,7 +69,11 @@ export interface NodePluginDef {
     label: string;
     placeholder: string;
     defaultValue?: string;
-    type?: "text" | "textarea";
+    type?: "text" | "textarea" | "select";
+    /** Categoria din BIMLibrary din care se populează opțiunile (când type="select"). */
+    selectSource?: string;
+    /** Opțiuni statice (alternativă la selectSource). */
+    selectOptions?: Array<{ value: string; label: string }>;
   }>;
   /** Sink nodes (no outputs) are always re-executed on every run. */
   isSink?: boolean;
